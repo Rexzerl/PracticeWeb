@@ -1,90 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
+    font-family: 'Courier New', Courier, monospace;
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    display: grid;
+    gap: 10px;
 }
 
 h2 {
     text-align: center;
 }
 
-form {
-    background: white;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 5px;
+.form-group {
+    display: grid;
+    grid-template-columns: 150px 10px auto;
+    align-items: center;
 }
 
 label {
     font-weight: bold;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button[type="submit"] {
-    background-color: #28a745;
-    color: white;
-}
-
-button[type="reset"] {
-    background-color: #dc3545;
-    color: white;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
+.separator {
     text-align: center;
 }
 
-th {
-    background-color: #007bff;
-    color: white;
+input[type="text"] {
+    margin-right: 3px;
 }
 
-.error {
-    color: red;
-    font-size: 12px;
-}
-.notification {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #dc3545;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 5px;
-    display: none;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 1000;
-    animation: fadeIn 0.3s ease-in-out;
+input[type="date"] {
+    margin-right: 3px;
 }
 
-.notification.success {
-    background-color: #28a745;
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background: #218838;
 }
