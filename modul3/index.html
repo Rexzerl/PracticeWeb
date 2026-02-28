@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Data Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Form Pendaftaran</h2>
+
+    <form id="formPendaftaran">
+        <input type="hidden" id="editIndex">
+
+        <label>Nama Lengkap</label>
+        <input type="text" id="nama">
+
+        <label>Email</label>
+        <input type="text" id="email">
+
+
+        <label>No HP</label>
+        <input type="text" id="nohp">
+
+        <label>Alamat</label>
+        <textarea id="alamat"></textarea>
+
+        <button type="submit">Simpan</button>
+        <button type="reset">Reset</button>
+    </form>
+    <div id="notification" class="notification"></div>
+
+    <h2>Data Pendaftaran</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>No HP</th>
+                <th>Alamat</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
